@@ -1,0 +1,138 @@
+<html>
+<head>
+<body background =  "https://assets.entrepreneur.com/content/16x9/822/20151120172744-procrastination-young-man-home-office-laptop-distracted-work-distant.jpeg">
+<center><img src =" http://www.freeiconspng.com/uploads/profile-icon-29.png">
+<style>
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;
+background-size:auto;
+   background-repeat:no-repeat;
+   background-size : 100%;
+
+}
+
+/* Style the tab */
+div.tab {
+    float: left;
+    border: 1px solid #a3a375;
+    background-color: #c1ff80;
+    width: 19%;
+    height: 300px;
+}
+
+/* Style the links inside the tab */
+div.tab a {
+    display: block;
+    color: black;
+    padding: 22px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+/* Change background color of links on hover */
+div.tab a:hover {
+    background-color: #a3a375;
+}
+
+/* Create an active/current tablink class */
+div.tab a:focus, .active {
+    background-color:#a3a375;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 2px solid #a3a375;
+    width: 80%;
+    border-left: none;
+    height: 300px;
+}
+</style>
+</head>
+<body>
+
+<p></p>
+
+<div class="tab">
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Profile Information')" id="defaultOpen">Profile Information</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Skills')">Skills</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Languages')">Languages</a>
+   <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Rating')">Rating</a>
+</div>
+
+<div id="Profile Information" class="tabcontent">
+  <h3>Profile Information</h3>
+  <p>Name : Ahmed
+  <br>
+  <br>
+  Major: Business Inforamtics
+  <br>
+  <br>
+  Username : Ahmed1234
+  <br>
+  <br>
+  E-mail : ahmed_ibrahim@yahoo.com
+
+  
+  
+  </p>
+</div>
+
+<div id="Skills" class="tabcontent">
+  <h3>Skills</h3>
+  <p> Java Script
+  <br>
+  <br>
+  HTML
+  <br>
+  <br>
+  C++
+ <b>
+ <b>
+
+
+
+  </p> 
+</div>
+
+<div id="Languages" class="tabcontent">
+  <h3>Languages</h3>
+  <p>
+  English
+  <br>
+  <br>
+  German
+  </p>
+</div>
+
+<div id="Rating" class="tabcontent">
+  <h3>Rating</h3>
+  <p>
+ 8 / 10
+  </p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

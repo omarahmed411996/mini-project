@@ -1,0 +1,39 @@
+var objpeople = [
+    {
+        username : "omarahmed"
+        password : "1234"
+    },
+
+    {
+        username : "tarekahmed"
+        password : "1234"
+    },
+
+    {
+        username : "mohamednawzad"
+        password : "1234"
+    }
+]
+
+function login (){
+    var username = document.getElementById("username").value
+    var password = document.getElementById("password").value
+
+for(i = 0; i < objpeople.length; i++){
+    if(username == objpeople[i].username && password == objpeople[i].password){
+        console.login(username + "is logged in !!")
+        return
+    }
+}
+console.log ("incorrect username or password")
+}
+ 
+
+
+
+
+
+
+
+
+]
